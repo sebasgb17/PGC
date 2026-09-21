@@ -13,6 +13,9 @@ public class GestorUsuarios {
     //pues ahi si no se mk, siempre esta complicadita esta vuelta
     //Pues el codigo que genera es algo como esto:
 
+    /*Pues sebas, se escucha bien pero noni noni, no ni idea de como es que es para hacerlo */
+    /*Igual me parece como chimba esa forma de crear usuarios, quedaría decirle a morera que nos recomienda */
+
 // Guardar
 XSSFWorkbook libro = new XSSFWorkbook();
 XSSFSheet hoja = libro.createSheet("Usuarios");
