@@ -8,6 +8,54 @@ import modelo.Usuario;
 public class GestorUsuarios {
     private List<Usuario> listaUsuarios;
 
+<<<<<<< HEAD
+=======
+    //pues ahi si no se mk, siempre esta complicadita esta vuelta
+    //Pues el codigo que genera es algo como esto:
+
+    /*Pues sebas, se escucha bien pero noni noni, no ni idea de como es que es para hacerlo */
+    /*Igual me parece como chimba esa forma de crear usuarios, quedaría decirle a morera que nos recomienda */
+
+// Guardar
+XSSFWorkbook libro = new XSSFWorkbook();
+XSSFSheet hoja = libro.createSheet("Usuarios");
+XSSFRow fila = hoja.createRow(0);
+fila.createCell(0).setCellValue("nombre");
+fila.createCell(1).setCellValue("rol");
+
+XSSFRow nueva = hoja.createRow(1);
+nueva.createCell(0).setCellValue("Carlos");
+nueva.createCell(1).setCellValue("Administrador");
+
+try (FileOutputStream out = new FileOutputStream("datos.xlsx")) {
+    libro.write(out);
+}
+libro.close();   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// pues si estoy viendo que esto no se esta guardando 
+// Pues toca darle ctrl + s xd
+//ya le di y no sale
+// creo que si toca como con comandos o alguna mrd asi voy a pillar 
+
+// pues si, igual ahi esta la idea 
+>>>>>>> a66fe530bb49ef6c58b564d486fdcbeb076f0001
     public GestorUsuarios() {
         this.listaUsuarios = new ArrayList<>();
     }
